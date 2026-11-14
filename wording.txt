@@ -1,0 +1,629 @@
+# WORDING FILE: Immersive Distribution and Exhibition Toolkit
+#
+# This file holds the wording on the toolkit's screens. You can change it here without touching the code.
+#
+# HOW TO EDIT
+#   Each line looks like this:
+#       Text on the page now => Text you want to show instead
+#   1. Find the line. Use Ctrl+F (Cmd+F on a Mac) to search for the words you see on the page.
+#   2. Change ONLY the text after "=>". Leave the text before "=>" exactly as it is, or the page can't find it.
+#   3. Keep each entry on one line.
+#   4. To undo a change, make the text after "=>" the same as the text before it again.
+#
+# GOOD TO KNOW
+#   - Lines that start with # are notes. The page ignores them.
+#   - If the same text appears in several places (for example an option used in two sections), one change updates it everywhere.
+#   - Some text that mixes in a number (like "325 matching entries") isn't listed, because it changes as people use the page.
+#   - Venue and festival details come from the Airtable data, and the case study texts quote the IDFA report, so neither is in this file.
+#   - After you save ("Commit changes"), the live site updates within a few minutes. Refresh the page to see it.
+#   - If something looks wrong, undo your change in this file. The page always falls back to its built-in wording.
+
+
+# ===== Landing page =====
+There’s a world for immersive arts => There’s a world for immersive arts
+Create Distribution Plan => Create Distribution Plan
+Explore Venue Database => Explore Venue Database
+
+# ===== Planning: start page =====
+Where would you like to start? => Where would you like to start?
+Vision => Vision
+Your values, needs and goals => Your values, needs and goals
+Festivals => Festivals
+Strategize premiere and circuit => Strategize premiere and circuit
+Exhibition => Exhibition
+Find venues and platforms => Find venues and platforms
+
+# ===== Vision: overview =====
+Your plan => Your plan
+Distribution and exhibition strategy. Your answers build your plan. => Distribution and exhibition strategy. Your answers build your plan.
+Please note: => Please note:
+First, your plan is for your eyes only. We do not store the data. => First, your plan is for your eyes only. We do not store the data.
+Second, this is a visioning exercise. In order to create a list of venues, festivals, or platforms, please go to the festival, exhibition or database sections to answer questions that relate directly to the database filters. => Second, this is a visioning exercise. In order to create a list of venues, festivals, or platforms, please go to the festival, exhibition or database sections to answer questions that relate directly to the database filters.
+Stage => Stage
+Audience => Audience
+Primary format => Primary format
+Format details => Format details
+Venue type => Venue type
+Exhibition timetable => Exhibition timetable
+Mode of interaction => Mode of interaction
+Core elements => Core elements
+Technical needs => Technical needs
+Financial arrangements => Financial arrangements
+Re-versioning => Re-versioning
+Partnerships => Partnerships
+Success => Success
+Roles => Roles
+Contracts => Contracts
+Dream venues => Dream venues
+
+# ===== Vision: What stage is your project in? =====
+Priority => Priority
+Type of festival => Type of festival
+Festival region => Festival region
+Festival timing => Festival timing
+Access => Access
+Review festivals => Review festivals
+Checklist => Checklist
+Financing => Financing
+Markets => Markets
+Platform => Platform
+Discipline => Discipline
+Format => Format
+Continent => Continent
+Country and city => Country and city
+Review venues => Review venues
+What stage is your project in? => What stage is your project in?
+A finished version => A finished version
+A prototype => A prototype
+A work in progress => A work in progress
+An idea or pitch => An idea or pitch
+Other => Other
+← Back => ← Back
+Copy link to save your progress => Copy link to save your progress
+Questions => Questions
+
+# ===== Vision: Who is your audience? =====
+Who is your audience? => Who is your audience?
+How will they discover the project? => How will they discover the project?
+How familiar are they with the technology? => How familiar are they with the technology?
+
+# ===== Vision: What is the primary format? =====
+What is the primary format? => What is the primary format?
+Head-mounted display => Head-mounted display
+Installation => Installation
+Performance or event => Performance or event
+Site-specific or responsive => Site-specific or responsive
+
+# ===== Vision: Format details =====
+Augmented reality => Augmented reality
+Bespoke VR => Bespoke VR
+Embodied AI => Embodied AI
+Games => Games
+Generative AI => Generative AI
+Glasses => Glasses
+Live event-presenter led => Live event-presenter led
+Live performance => Live performance
+Mixed reality headset => Mixed reality headset
+Projections => Projections
+Screen media => Screen media
+Set-based installation => Set-based installation
+Smartphone => Smartphone
+Sound-led => Sound-led
+Spatial audio => Spatial audio
+VR plug and play: 3DoF => VR plug and play: 3DoF
+VR plug and play: 6DoF => VR plug and play: 6DoF
+WebXR => WebXR
+
+# ===== Vision: What types of venues would you like to show your work in? =====
+What types of venues would you like to show your work in? => What types of venues would you like to show your work in?
+Art gallery => Art gallery
+Cinema => Cinema
+Civic organization => Civic organization
+Community organization => Community organization
+Cultural center => Cultural center
+Dedicated XR space => Dedicated XR space
+Dome => Dome
+Library => Library
+Museum => Museum
+News organization => News organization
+Reused space => Reused space
+Theater => Theater
+University => University
+
+# ===== Vision: When do you plan to exhibit the work, and at what stage? =====
+When do you plan to exhibit the work, and at what stage? => When do you plan to exhibit the work, and at what stage?
+Completed project => Completed project
+Prototype => Prototype
+Add a note (optional) => Add a note (optional)
+
+# ===== Vision: What is the mode of interaction for the audience? =====
+What is the mode of interaction for the audience? => What is the mode of interaction for the audience?
+Audience members interact with each other => Audience members interact with each other
+Audience moves through a space => Audience moves through a space
+Audience reaches for and handles objects => Audience reaches for and handles objects
+One audience member at a time => One audience member at a time
+
+# ===== Vision: What are the core conceptual and practical elements of the project? =====
+What are the core conceptual and practical elements of the project? => What are the core conceptual and practical elements of the project?
+Think in terms of: => Think in terms of:
+User experience => User experience
+Multi-user versus single user => Multi-user versus single user
+Connection to place => Connection to place
+Being present at exhibitions => Being present at exhibitions
+
+# ===== Vision: What technical equipment or support does your work need to be shown? =====
+What technical equipment or support does your work need to be shown? => What technical equipment or support does your work need to be shown?
+Audio => Audio
+Computers or playback devices => Computers or playback devices
+Custom hardware or installation => Custom hardware or installation
+Headsets and controllers => Headsets and controllers
+Network connection => Network connection
+Projection or screens => Projection or screens
+Technical staff or facilitation => Technical staff or facilitation
+Tracking or sensors => Tracking or sensors
+Add details (optional) => Add details (optional)
+Details: quantities, models, software, who supplies what (optional) => Details: quantities, models, software, who supplies what (optional)
+
+# ===== Vision: Financial arrangements =====
+Make the work freely available => Make the work freely available
+Pay all project fees and costs => Pay all project fees and costs
+Reimbursement for project costs and/or travel => Reimbursement for project costs and/or travel
+Shared revenue => Shared revenue
+Ticket sales => Ticket sales
+
+# ===== Vision: Re-versioning =====
+Can it be adapted to other formats? Can it scale? => Can it be adapted to other formats? Can it scale?
+
+# ===== Vision: Partnerships =====
+Are there organizations connected to the content that can help with distribution? What other partnerships will you explore? => Are there organizations connected to the content that can help with distribution? What other partnerships will you explore?
+
+# ===== Vision: What does success look like for this project? =====
+What does success look like for this project? => What does success look like for this project?
+A particular audience or co-creator => A particular audience or co-creator
+Audience numbers => Audience numbers
+Awards => Awards
+Behavioral change => Behavioral change
+Content-based partnerships => Content-based partnerships
+Contribution to public discourse => Contribution to public discourse
+Diverse audiences => Diverse audiences
+Financial => Financial
+Funding => Funding
+Human connection => Human connection
+Industry partnerships => Industry partnerships
+New knowledge => New knowledge
+Perspective change => Perspective change
+Policy change => Policy change
+Press coverage => Press coverage
+Social impact => Social impact
+
+# ===== Vision: Roles =====
+Who will reach out to venues, festivals and platforms for this project? => Who will reach out to venues, festivals and platforms for this project?
+Do you want to work with a distributor? => Do you want to work with a distributor?
+Who will manage the materials, technology and equipment for distribution? => Who will manage the materials, technology and equipment for distribution?
+Who will handle the contracts? => Who will handle the contracts?
+
+# ===== Vision: Contracts: consider negotiating =====
+Contracts: consider negotiating => Contracts: consider negotiating
+Chain of title => Chain of title
+Fees => Fees
+IP => IP
+Revenue sharing => Revenue sharing
+Rights => Rights
+Staffing => Staffing
+
+# ===== Vision: Dream venues, festivals and platforms =====
+Dream venues, festivals and platforms => Dream venues, festivals and platforms
+Make a list => Make a list
+
+# ===== Vision: end of section =====
+Find festivals that fit, and prepare for a premiere. => Find festivals that fit, and prepare for a premiere.
+Festivals not part of your plan? => Festivals not part of your plan?
+Skip to Exhibition => Skip to Exhibition
+
+# ===== Festivals: What is your priority for the premiere? =====
+What is your priority for the premiere? => What is your priority for the premiere?
+A-list => A-list
+Accessibility => Accessibility
+Date of application submission => Date of application submission
+Date of festival => Date of festival
+Discipline focused => Discipline focused
+Financial support from festival => Financial support from festival
+Location => Location
+Press => Press
+Size => Size
+XR award => XR award
+XR focused => XR focused
+
+# ===== Festivals: What kind of festival are you most interested in? =====
+What kind of festival are you most interested in? => What kind of festival are you most interested in?
+Film => Film
+Tech => Tech
+Visual arts => Visual arts
+XR => XR
+
+# ===== Festivals: Where do you want to premiere? =====
+Where do you want to premiere? => Where do you want to premiere?
+Africa => Africa
+Antarctica => Antarctica
+Asia => Asia
+Europe => Europe
+North America => North America
+Oceania => Oceania
+South America => South America
+
+# ===== Festivals: What time of year do you want to show? =====
+What time of year do you want to show? => What time of year do you want to show?
+Fall => Fall
+Spring => Spring
+Summer => Summer
+Winter => Winter
+
+# ===== Festivals: What access needs for the audience are important to you? =====
+What access needs for the audience are important to you? => What access needs for the audience are important to you?
+Closed captions => Closed captions
+Language translation => Language translation
+Wheelchair accessible => Wheelchair accessible
+N/A => N/A
+
+# ===== Festivals: Which of these are worth investigating? =====
+Which of these are worth investigating? => Which of these are worth investigating?
+Reset filters => Reset filters
+
+# ===== Festivals: What do you need to prepare before approaching a festival? =====
+What do you need to prepare before approaching a festival? => What do you need to prepare before approaching a festival?
+Complete credit list => Complete credit list
+Documentation or a build or file to share => Documentation or a build or file to share
+Have you checked what expenses the festival will cover towards travel and installation costs such as fabrication or set dressing? => Have you checked what expenses the festival will cover towards travel and installation costs such as fabrication or set dressing?
+Have you checked whether there are fees involved in submission and showcasing? => Have you checked whether there are fees involved in submission and showcasing?
+Key contact or contact for sales => Key contact or contact for sales
+Official application => Official application
+One-minute trailer => One-minute trailer
+Project description => Project description
+Specific questions for each festival => Specific questions for each festival
+Stills for promotion including a poster if required => Stills for promotion including a poster if required
+Technical rider => Technical rider
+
+# ===== Festivals: If a festival is not covering all costs, how are you financing your showcase? =====
+If a festival is not covering all costs, how are you financing your showcase? => If a festival is not covering all costs, how are you financing your showcase?
+Funder => Funder
+Self => Self
+Sponsor => Sponsor
+
+# ===== Festivals: Are you interested in a pitching market? =====
+Are you interested in a pitching market? => Are you interested in a pitching market?
+Yes => Yes
+No => No
+
+# ===== Festivals: end of section =====
+Find venues and platforms, and what to confirm with each host. => Find venues and platforms, and what to confirm with each host.
+Country => Country
+
+# ===== Exhibition: What kind of platform or service are you looking for? =====
+What kind of platform or service are you looking for? => What kind of platform or service are you looking for?
+Consulting => Consulting
+Education => Education
+Exhibition (travelling) => Exhibition (travelling)
+Networking => Networking
+Research/Resource => Research/Resource
+Social => Social
+no data yet => no data yet
+Technology services => Technology services
+Venue => Venue
+
+# ===== Exhibition: What venue type are you interested in? =====
+What venue type are you interested in? => What venue type are you interested in?
+
+# ===== Exhibition: What is the venue’s primary discipline? =====
+What is the venue’s primary discipline? => What is the venue’s primary discipline?
+Art and tech => Art and tech
+Journalism => Journalism
+Multimedia => Multimedia
+Music => Music
+Performance arts => Performance arts
+TV/Radio => TV/Radio
+
+# ===== Exhibition: What format would you like to explore? =====
+What format would you like to explore? => What format would you like to explore?
+Live performers => Live performers
+Screen => Screen
+
+# ===== Exhibition: Would you like sites listed by continent? =====
+Would you like sites listed by continent? => Would you like sites listed by continent?
+Online => Online
+
+# ===== Exhibition: Are you interested in a particular country? =====
+Are you interested in a particular country? => Are you interested in a particular country?
+Are you interested in a particular city? => Are you interested in a particular city?
+
+# ===== Exhibition: Which of these are worth investigating? =====
+No recorded venues match all of these. => No recorded venues match all of these.
+That doesn’t mean there are none for your work. => That doesn’t mean there are none for your work.
+Make platform flexible => Make platform flexible
+Make venue type flexible => Make venue type flexible
+Make discipline flexible => Make discipline flexible
+Make format flexible => Make format flexible
+Make continent flexible => Make continent flexible
+
+# ===== Exhibition: Checklist =====
+Audience accessibility provisions => Audience accessibility provisions
+Audience management system. Who is running it? => Audience management system. Who is running it?
+Connectivity: internet and network access => Connectivity: internet and network access
+Contracts: IP, fees, revenue sharing, rights, staffing, chain of title => Contracts: IP, fees, revenue sharing, rights, staffing, chain of title
+Equipment: headsets, computers, screens, power => Equipment: headsets, computers, screens, power
+How will audiences be onboarded and by whom => How will audiences be onboarded and by whom
+Labor: who installs, runs, trains and troubleshoots => Labor: who installs, runs, trains and troubleshoots
+Money: fees, freight, travel, insurance => Money: fees, freight, travel, insurance
+Offboarding: how audiences will leave the experience, and any support afterwards => Offboarding: how audiences will leave the experience, and any support afterwards
+Space: floor and door size, layout, light and sound => Space: floor and door size, layout, light and sound
+What systems of care do they have in place for artists, audiences and staff that they can articulate? Do they have anything written? => What systems of care do they have in place for artists, audiences and staff that they can articulate? Do they have anything written?
+
+# ===== Your plan page =====
+Your distribution plan => Your distribution plan
+· For your eyes only => · For your eyes only
+Project title => Project title
+↓ Download PDF => ↓ Download PDF
+Copy as Markdown => Copy as Markdown
+Send via email => Send via email
+Your shortlist => Your shortlist
+Nothing shortlisted yet. Tap ☆ on one below. => Nothing shortlisted yet. Tap ☆ on one below.
+No recorded venues match all of these filters. => No recorded venues match all of these filters.
+Preferences => Preferences
+Confirm with hosts => Confirm with hosts
+Not started: => Not started:
+Start Vision → => Start Vision →
+Start Festivals → => Start Festivals →
+Venue data: Airtable export, 8 November 2026. Missing information means “to confirm”, not unsuitable. => Venue data: Airtable export, 8 November 2026. Missing information means “to confirm”, not unsuitable.
+Add your project's name => Add your project's name
+
+Project overview => Project overview
+Project stage => Project stage
+Target audience => Target audience
+Audience interaction => Audience interaction
+Technical & creative requirements => Technical & creative requirements
+Technical requirements => Technical requirements
+Core & non-negotiable elements => Core & non-negotiable elements
+Adaptability & re-versioning => Adaptability & re-versioning
+Distribution strategy => Distribution strategy
+Distribution timeline => Distribution timeline
+Venue types => Venue types
+Potential partnerships => Potential partnerships
+Dream venues, festivals & platforms => Dream venues, festivals & platforms
+Goals & responsibilities => Goals & responsibilities
+Definition of success => Definition of success
+Roles & responsibilities => Roles & responsibilities
+Contracts & rights => Contracts & rights
+Start Exhibition → => Start Exhibition →
+not a filter yet => not a filter yet
+Festival preparation => Festival preparation
+
+# ===== Database =====
+I have a format in mind. => I have a format in mind.
+Who shows immersive in my discipline? => Who shows immersive in my discipline?
+I want to show my work in a particular part of the world => I want to show my work in a particular part of the world
+Choose a different starting point => Choose a different starting point
+Clear all => Clear all
+Filters => Filters
+Add a filter => Add a filter
+matching entries => matching entries
+Hide list => Hide list
+Matching entries => Matching entries
+Venues => Venues
+Online platforms => Online platforms
+All countries => All countries
+All cities => All cities
+Scroll for more => Scroll for more
+Download PDF => Download PDF
+Know a venue, festival, online platform or other organization that's missing, or spotted a mistake? => Know a venue, festival, online platform or other organization that's missing, or spotted a mistake?
+Add a site => Add a site
+Report an error => Report an error
+What platforms or service are you interested in? => What platforms or service are you interested in?
+All filters added. Every venue on the right shows how it curates and how to reach out. => All filters added. Every venue on the right shows how it curates and how to reach out.
+
+# ===== Resources =====
+What would you like to explore? => What would you like to explore?
+Case studies => Case studies
+Selected project deep dives => Selected project deep dives
+Catalogues => Catalogues
+Catalogues of immersive works => Catalogues of immersive works
+Directories => Directories
+Directories and indexes of venues and facilities => Directories and indexes of venues and facilities
+Soul Paint => Soul Paint
+Sarah Ticho and Niki Smit => Sarah Ticho and Niki Smit
+Arts and health => Arts and health
+Festival support => Festival support
+Libraries and community => Libraries and community
+AI & Me => AI & Me
+Mots: Octavian Mot and Daniela Nedovescu => Mots: Octavian Mot and Daniela Nedovescu
+Touring an installation => Touring an installation
+Shipping and customs => Shipping and customs
+Artist fees => Artist fees
+Kinfolk Tech => Kinfolk Tech
+Idris Brewster => Idris Brewster
+Community-led => Community-led
+Public AR => Public AR
+Beyond festivals => Beyond festivals
+Ancestors => Ancestors
+Steye Hallema, The Smartphone Orchestra => Steye Hallema, The Smartphone Orchestra
+Markets and bookings => Markets and bookings
+Low-threshold access => Low-threshold access
+New versions => New versions
+Images: => Images:
+MIT Open Documentary Lab, XR Distribution Pipelines => MIT Open Documentary Lab, XR Distribution Pipelines
+Diversion cinema catalogue => Diversion cinema catalogue
+Visit diversionxr.com => Visit diversionxr.com
+Unframed Collection => Unframed Collection
+Visit unframed-collection.com => Visit unframed-collection.com
+Immersive Arts facilities directory => Immersive Arts facilities directory
+Facilities for immersive work across the UK. => Facilities for immersive work across the UK.
+Visit facilities.immersivearts.uk => Visit facilities.immersivearts.uk
+Shared index (Google Sheet) => Shared index (Google Sheet)
+A shared spreadsheet index from the research team. => A shared spreadsheet index from the research team.
+Open the sheet => Open the sheet
+
+# ===== Top menu =====
+immersive => immersive
+Distribution => Distribution
+& Exhibition => & Exhibition
+toolkit => toolkit
+Planning => Planning
+Database => Database
+Resources => Resources
+Glossary => Glossary
+Map => Map
+
+# ===== Footer =====
+Immersive Distribution and Exhibition Toolkit => Immersive Distribution and Exhibition Toolkit
+Guidance and a venue database for artists showing immersive work. => Guidance and a venue database for artists showing immersive work.
+Explore => Explore
+Get in touch => Get in touch
+Add a resource => Add a resource
+Contact us => Contact us
+
+# ===== Privacy policy =====
+Privacy policy => Privacy policy
+Last updated 10 November 2026 => Last updated 10 November 2026
+The toolkit doesn’t ask you to sign up, and the team behind it doesn’t collect, store or sell your answers. => The toolkit doesn’t ask you to sign up, and the team behind it doesn’t collect, store or sell your answers.
+Your answers and your plan => Your answers and your plan
+Your answers, project title, shortlist and Database filters stay in your browser. They’re kept in the page address (the part after the #), so you can bookmark or copy the link to come back to them. Anyone you share that link with can see what’s in it. The toolkit never sends your answers to us or to anyone else. => Your answers, project title, shortlist and Database filters stay in your browser. They’re kept in the page address (the part after the #), so you can bookmark or copy the link to come back to them. Anyone you share that link with can see what’s in it. The toolkit never sends your answers to us or to anyone else.
+Downloads and copies => Downloads and copies
+PDFs and Markdown copies of your plan or your Database search are made in your browser and saved to your device. Nothing is uploaded. => PDFs and Markdown copies of your plan or your Database search are made in your browser and saved to your device. Nothing is uploaded.
+Email links => Email links
+“Send via email”, “Report an error” and “Contact us” open your own email app with a draft message. Nothing is sent unless you send it yourself. => “Send via email”, “Report an error” and “Contact us” open your own email app with a draft message. Nothing is sent unless you send it yourself.
+Cookies and storage => Cookies and storage
+The toolkit uses no cookies, analytics or advertising trackers. It remembers two display settings (the page background and frame) in your browser’s local storage, and nothing else. => The toolkit uses no cookies, analytics or advertising trackers. It remembers two display settings (the page background and frame) in your browser’s local storage, and nothing else.
+Other services => Other services
+To show the page, your browser loads fonts from Google Fonts and the PDF tool from cdnjs (Cloudflare). Like any website request, these services receive your IP address and browser details, under their own privacy policies. The site is hosted on GitHub Pages, which may keep standard visit logs. Links to venues, festivals and case studies take you to other websites, which have their own policies. => To show the page, your browser loads fonts from Google Fonts and the PDF tool from cdnjs (Cloudflare). Like any website request, these services receive your IP address and browser details, under their own privacy policies. The site is hosted on GitHub Pages, which may keep standard visit logs. Links to venues, festivals and case studies take you to other websites, which have their own policies.
+Venue information => Venue information
+Venue and festival details come from public sources and the toolkit’s research database. If you represent a venue and want its details corrected or removed, use “Report an error”. => Venue and festival details come from public sources and the toolkit’s research database. If you represent a venue and want its details corrected or removed, use “Report an error”.
+
+# ===== Glossary terms and definitions =====
+A => A
+B => B
+C => C
+D => D
+E => E
+F => F
+G => G
+H => H
+I => I
+J => J
+K => K
+L => L
+M => M
+N => N
+O => O
+P => P
+Q => Q
+R => R
+S => S
+T => T
+U => U
+V => V
+W => W
+X => X
+Y => Y
+Z => Z
+Venue/platform => Venue/platform
+Big international festivals that are considered prestigious and usually require a world premiere. => Big international festivals that are considered prestigious and usually require a world premiere.
+Format detail => Format detail
+Raving like it's the 90s! Reaching for a virtual object and finding it is a material thing with weight and texture! Roam a liminal space and explore the fuzzy boundaries between realities... => Raving like it's the 90s! Reaching for a virtual object and finding it is a material thing with weight and texture! Roam a liminal space and explore the fuzzy boundaries between realities...
+Bespoke VR involves a VR headset and also a custom set or installation. The set is typically mapped spatially into the VR or MR world, and participants can often interact with the set while in the VR headset. They may be single- or multi-user experiences. => Bespoke VR involves a VR headset and also a custom set or installation. The set is typically mapped spatially into the VR or MR world, and participants can often interact with the set while in the VR headset. They may be single- or multi-user experiences.
+Example projects: => Example projects:
+Turbulence: Jamais Vu, Ben Andrews & Emma Roberts, VR with passthrough camera (IDFA DocLab 2023) => Turbulence: Jamais Vu, Ben Andrews & Emma Roberts, VR with passthrough camera (IDFA DocLab 2023)
+Fragile Home, room scale VR with set (IDFA 2024) => Fragile Home, room scale VR with set (IDFA 2024)
+In Pursuit of Repetitive Beats, room-scale multi-user VR => In Pursuit of Repetitive Beats, room-scale multi-user VR
+The Collider, Anagram, VR and installation (IDFA DocLab 2018) => The Collider, Anagram, VR and installation (IDFA DocLab 2018)
+Catalogue producer => Catalogue producer
+Distributor => Distributor
+Catalogue producers are companies with catalogues of XR projects, and they can act as agents between producers and venues. They may curate a collection of projects or take individual projects to venues or platforms. => Catalogue producers are companies with catalogues of XR projects, and they can act as agents between producers and venues. They may curate a collection of projects or take individual projects to venues or platforms.
+Examples include: => Examples include:
+NuReality => NuReality
+UnFramed Collection => UnFramed Collection
+Dedicated XR venues => Dedicated XR venues
+Including Phi Centre (Montreal, Canada), Undershed (Bristol, UK) => Including Phi Centre (Montreal, Canada), Undershed (Bristol, UK)
+Spaces built or programmed mainly for immersive and XR work, with permanent equipment, trained staff and a regular public programme. => Spaces built or programmed mainly for immersive and XR work, with permanent equipment, trained staff and a regular public programme.
+Work where an AI system has a physical or spatial presence the audience meets, such as a robot, an animated character or an installation that senses and responds to people in the room. => Work where an AI system has a physical or spatial presence the audience meets, such as a robot, an animated character or an installation that senses and responds to people in the room.
+Exhibition or tour producer => Exhibition or tour producer
+There are companies that offer a range of services around event, exhibition or tour production, from liaising with venues to sourcing and setting up gear. => There are companies that offer a range of services around event, exhibition or tour production, from liaising with venues to sourcing and setting up gear.
+Diversion Cinema => Diversion Cinema
+Festivals are not tied to any one format or venue type: a project of any format may go to a festival at any point in its distribution journey. This toolkit helps projects plan how to reach audiences beyond the festival circuit, but festivals remain a vital part of that journey, often where a work first meets audiences, peers and future hosts. => Festivals are not tied to any one format or venue type: a project of any format may go to a festival at any point in its distribution journey. This toolkit helps projects plan how to reach audiences beyond the festival circuit, but festivals remain a vital part of that journey, often where a work first meets audiences, peers and future hosts.
+Find festivals in the Database, or plan for them in the Festivals phase of Planning. => Find festivals in the Database, or plan for them in the Festivals phase of Planning.
+Fulldomes => Fulldomes
+Fulldomes and planetarium venues. => Fulldomes and planetarium venues.
+A dome-shaped theatre where projected images cover the whole curved ceiling around the audience, used for immersive films, shows and live audiovisual work. => A dome-shaped theatre where projected images cover the whole curved ceiling around the audience, used for immersive films, shows and live audiovisual work.
+Work that uses AI systems to generate images, sound, text, characters or worlds, either while it is made or live during the experience. Festival rules vary: some festivals don't accept work made with generative AI, and others ask you to declare how it was used when you apply, so check each call's rules before you submit. => Work that uses AI systems to generate images, sound, text, characters or worlds, either while it is made or live during the experience. Festival rules vary: some festivals don't accept work made with generative AI, and others ask you to declare how it was used when you apply, so check each call's rules before you submit.
+GLAM venues => GLAM venues
+GLAM stands for Galleries, Libraries, Archives and Museums. These cultural institutions may curate XR projects or programs, as standalone events or as part of wider exhibitions. => GLAM stands for Galleries, Libraries, Archives and Museums. These cultural institutions may curate XR projects or programs, as standalone events or as part of wider exhibitions.
+Many GLAM venues now show immersive work within exhibitions, digital galleries, learning programmes or special events. => Many GLAM venues now show immersive work within exhibitions, digital galleries, learning programmes or special events.
+These projects are delivered via an individual head-mounted display such as a VR or MR device. => These projects are delivered via an individual head-mounted display such as a VR or MR device.
+Immersive theatre, performance, event-based XR => Immersive theatre, performance, event-based XR
+Audiences typically obtain a ticket for a set start time, and turn up along with other audience members, for these immersive events. => Audiences typically obtain a ticket for a set start time, and turn up along with other audience members, for these immersive events.
+Impact producer => Impact producer
+Impact producers are more common in the film and documentary sector, but there is increasing interest in their potential role within XR to support projects aiming to make social and environmental impact. => Impact producers are more common in the film and documentary sector, but there is increasing interest in their potential role within XR to support projects aiming to make social and environmental impact.
+Industry, community or issue partners => Industry, community or issue partners
+Including: => Including:
+healthcare sector => healthcare sector
+NGOs and advocacy organisations => NGOs and advocacy organisations
+Interactive event - automated => Interactive event - automated
+These projects involve a scheduled start time with multiple audience members. They include audience interaction but do not require live presenters or actors. => These projects involve a scheduled start time with multiple audience members. They include audience interaction but do not require live presenters or actors.
+Drinking Brecht, Sister Sylvester, automated interactive performance (IDFA DocLab 2024) => Drinking Brecht, Sister Sylvester, automated interactive performance (IDFA DocLab 2024)
+Handle With Care, Ontroerend Goed, automated theatre (IDFA 2025) => Handle With Care, Ontroerend Goed, automated theatre (IDFA 2025)
+Interactive event - presenter led => Interactive event - presenter led
+Audiences turn up on time, timidly observe their audience peers wondering if they will have to interact with them, and are shepherded through interactions or activities that immediately make them want more and wonder what they were worried about. => Audiences turn up on time, timidly observe their audience peers wondering if they will have to interact with them, and are shepherded through interactions or activities that immediately make them want more and wonder what they were worried about.
+These projects involve a scheduled start time with multiple participants, and require a presenter or team to deliver. They can involve live interaction between participants. => These projects involve a scheduled start time with multiple participants, and require a presenter or team to deliver. They can involve live interaction between participants.
+Ancestors, the Smartphone Orchestra, smartphone based interactive event (IDFA DocLab 2024) => Ancestors, the Smartphone Orchestra, smartphone based interactive event (IDFA DocLab 2024)
+The Social Sorting Experiment, the Smartphone Orchestra (IDFA DocLab 2019) => The Social Sorting Experiment, the Smartphone Orchestra (IDFA DocLab 2019)
+Audiences can see each other, but they might also see and hear the late great Ryuichi Sakamoto playing a virtual piano with a tree growing gloriously out of the top... => Audiences can see each other, but they might also see and hear the late great Ryuichi Sakamoto playing a virtual piano with a tree growing gloriously out of the top...
+These projects are delivered via a mixed reality headset that enables participants to see both the physical space around them and additional media layers. => These projects are delivered via a mixed reality headset that enables participants to see both the physical space around them and additional media layers.
+Kagami, Ryuichi Sakamoto and Tin Drum (2024) => Kagami, Ryuichi Sakamoto and Tin Drum (2024)
+Terminal 3, Asad J. Malik (2018) => Terminal 3, Asad J. Malik (2018)
+Through the Wardrobe, Rob Eagle (IDFA 2019) => Through the Wardrobe, Rob Eagle (IDFA 2019)
+Non-headset XR/installation => Non-headset XR/installation
+These projects layer media elements onto the audience's surrounding environment through technology such as interactive screens, projections, digitally-enabled sets, smartphones or tablets, and more. => These projects layer media elements onto the audience's surrounding environment through technology such as interactive screens, projections, digitally-enabled sets, smartphones or tablets, and more.
+Online platform => Online platform
+Including in-home headset, webXR, in-home/personal AR/smartphone use. => Including in-home headset, webXR, in-home/personal AR/smartphone use.
+Steam => Steam
+Meta Store => Meta Store
+Set-based installation, multi-screen, projection => Set-based installation, multi-screen, projection
+Participants might dance a duet with a projected character, be roasted by a rude AI in front of their friends, watch multiple screens where women fearlessly navigate unfriendly urban spaces. => Participants might dance a duet with a projected character, be roasted by a rude AI in front of their friends, watch multiple screens where women fearlessly navigate unfriendly urban spaces.
+These projects involve an installation in a physical space. The installation may enable interaction from the audience (e.g. Liminal, AI and Me, Vast Body), it may be multi-channel screen-based (e.g. Entropic Fields of Displacement), it may incorporate augmented reality elements (e.g. Oryza: Healing Ground). => These projects involve an installation in a physical space. The installation may enable interaction from the audience (e.g. Liminal, AI and Me, Vast Body), it may be multi-channel screen-based (e.g. Entropic Fields of Displacement), it may incorporate augmented reality elements (e.g. Oryza: Healing Ground).
+Liminal, installation and recorded sound (IDFA DocLab 2024) => Liminal, installation and recorded sound (IDFA DocLab 2024)
+AI and Me, Mots, interactive AI screen installation (IDFA DocLab 2024) => AI and Me, Mots, interactive AI screen installation (IDFA DocLab 2024)
+Entropic Fields of Displacement, Pegah Tabassinejad, multi-channel installation (IDFA DocLab 2024) => Entropic Fields of Displacement, Pegah Tabassinejad, multi-channel installation (IDFA DocLab 2024)
+Oryza: Healing Ground, Tamara Shogaolu, screen installation and AR (IDFA DocLab 2024) => Oryza: Healing Ground, Tamara Shogaolu, screen installation and AR (IDFA DocLab 2024)
+Vast Body, AAOTAA, interactive screen installation (IDFA DocLab 2019) => Vast Body, AAOTAA, interactive screen installation (IDFA DocLab 2019)
+Site specific or responsive XR => Site specific or responsive XR
+These projects are developed for a specific geographic location, and may use geolocation data or physical markers for their operation. => These projects are developed for a specific geographic location, and may use geolocation data or physical markers for their operation.
+Smartphone based work, personal device => Smartphone based work, personal device
+Participants can whip out a smartphone and transform their surrounds with a floating alien-like plant or a vibrant memorial to Black history. => Participants can whip out a smartphone and transform their surrounds with a floating alien-like plant or a vibrant memorial to Black history.
+These projects primarily involve engagement through a smartphone, usually the participant's own phone but sometimes provided. For augmented reality projects, typically physical markers will trigger a project. => These projects primarily involve engagement through a smartphone, usually the participant's own phone but sometimes provided. For augmented reality projects, typically physical markers will trigger a project.
+Kinfolk => Kinfolk
+, AR monuments/public space art via smartphones => , AR monuments/public space art via smartphones
+Future Botanica, Polymorf, smartphone-based AR (IDFA DocLab 2024) => Future Botanica, Polymorf, smartphone-based AR (IDFA DocLab 2024)
+Consensus Gentium, Karen Palmer, smartphone app => Consensus Gentium, Karen Palmer, smartphone app
+Sound-led work => Sound-led work
+Audiences can explore the physical world around them, but hear it in new ways with an augmented layer of audio to accompany them. => Audiences can explore the physical world around them, but hear it in new ways with an augmented layer of audio to accompany them.
+These projects are primarily or entirely audio-driven. They may involve spatialised sound, or encourage interaction with the surrounding space. => These projects are primarily or entirely audio-driven. They may involve spatialised sound, or encourage interaction with the surrounding space.
+Drift, Nienke Huitenga, Hay Kranen, Lieven Heeremans, podcast including AI generation (IDFA DocLab 2024) => Drift, Nienke Huitenga, Hay Kranen, Lieven Heeremans, podcast including AI generation (IDFA DocLab 2024)
+Borderline Visible, Ant Hampton, audio experience accompanying a book (IDFA DocLab 2023) => Borderline Visible, Ant Hampton, audio experience accompanying a book (IDFA DocLab 2023)
+It Must Have Been Dark by Then, Duncan Speakman, augmented audio walk (IDFA DocLab 2019) => It Must Have Been Dark by Then, Duncan Speakman, augmented audio walk (IDFA DocLab 2019)
+Pilgrim, Lauren Arora Hutchinson, augmented audio walk (IDFA DocLab 2018) => Pilgrim, Lauren Arora Hutchinson, augmented audio walk (IDFA DocLab 2018)
+Theatre/live performers => Theatre/live performers
+This is theatre, but not as you know it. => This is theatre, but not as you know it.
+These projects involve live performers or presenters, and they are mediated in big or small ways through technology. => These projects involve live performers or presenters, and they are mediated in big or small ways through technology.
+Thank you for being here, Ontroerend Goed (IDFA DocLab 2024) => Thank you for being here, Ontroerend Goed (IDFA DocLab 2024)
+(this conversation is) Off the Record, Nirit Peled (IDFA DocLab 2023) => (this conversation is) Off the Record, Nirit Peled (IDFA DocLab 2023)
+Theatres and performing arts venues => Theatres and performing arts venues
+Examples include Wales Millennium Centre, LA Music Centre, and countless more! => Examples include Wales Millennium Centre, LA Music Centre, and countless more!
+Venues built for live performance that increasingly present immersive theatre, live XR and mixed-reality productions alongside their stage programme. => Venues built for live performance that increasingly present immersive theatre, live XR and mixed-reality productions alongside their stage programme.
+VR cinemas and arcades => VR cinemas and arcades
+Public venues where visitors book a timed session to watch or play VR work in headsets, with staff on hand to fit and run the equipment. => Public venues where visitors book a timed session to watch or play VR work in headsets, with staff on hand to fit and run the equipment.
+The participants' rear ends might be firmly planted on swivel chairs, but they would swear they are seated in a southern US diner, or in a whispering forest, or on a space station... => The participants' rear ends might be firmly planted on swivel chairs, but they would swear they are seated in a southern US diner, or in a whispering forest, or on a space station...
+These projects require a VR headset and the participant is fixed in their location, either standing or seated. They can be delivered individually or in cinema format. => These projects require a VR headset and the participant is fixed in their location, either standing or seated. They can be delivered individually or in cinema format.
+Traveling While Black, Roger Ross Williams and Felix & Paul Studios (2019) => Traveling While Black, Roger Ross Williams and Felix & Paul Studios (2019)
+Notes on Blindness, Amaury La Burthe, Arnaud Colinart, James Spinney, Peter Middleton (2016) => Notes on Blindness, Amaury La Burthe, Arnaud Colinart, James Spinney, Peter Middleton (2016)
+VR that just needs a reasonable space, a headset and charging station, and some wet wipes – ready, steady, go! => VR that just needs a reasonable space, a headset and charging station, and some wet wipes – ready, steady, go!
+VR 6DoF plug and play projects are generally single-user room-scale but do not require sets or other installation, just the space for participants to move around in limited fashion. => VR 6DoF plug and play projects are generally single-user room-scale but do not require sets or other installation, just the space for participants to move around in limited fashion.
+Impulse: Playing with Reality, Anagram (IDFA DocLab 2024) => Impulse: Playing with Reality, Anagram (IDFA DocLab 2024)
+Soul Paint, Hatsumi (2024) => Soul Paint, Hatsumi (2024)
+Common Ground, Darren Emerson/East City Films (IDFA DocLab 2019) => Common Ground, Darren Emerson/East City Films (IDFA DocLab 2019)
