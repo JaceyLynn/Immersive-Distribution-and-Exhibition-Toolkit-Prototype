@@ -468,7 +468,7 @@ Immersive Arts facilities directory => Immersive Arts facilities directory
 Facilities for immersive work across the UK. => Facilities for immersive work across the UK.
 Visit facilities.immersivearts.uk => Visit facilities.immersivearts.uk
 Radius - Immersive Exhibition Parameters Matrix => Radius - Immersive Exhibition Parameters Matrix
-A shared spreadsheet from the Radius team. => A shared spreadsheet from the Radius team.
+Radius venues share their exhibition parameters. => Radius venues share their exhibition parameters.
 Open the sheet => Open the sheet
 
 # ===== Top menu =====
