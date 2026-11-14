@@ -49,6 +49,21 @@ You can change almost any text on the site by editing `wording.txt` on GitHub. Y
 5. Click **Commit changes…**, add a short note about what you changed, and click **Commit changes** again.
 6. Wait a few minutes, then refresh the live site to see the change.
 
+### Adding a new item
+
+Start a new line with `+`, then the question or Resources page the item belongs to, then `=>`, then the new item:
+
+```
++ What venue type are you interested in? => Pop-up space
++ Checklist => Insurance certificates
++ Catalogues => Catalogue name | https://link-to-it.org | One-line description (optional)
+```
+
+- This works for answer options in any question, checklist items, and links on the Catalogues and Directories pages.
+- Copy the question exactly as it appears in `wording.txt`.
+- New Database options show as "no data yet" until venues in the Airtable are tagged with them.
+- New questions and new filter types still need the development team.
+
 Some things to keep in mind:
 
 - Keep each entry on one line.

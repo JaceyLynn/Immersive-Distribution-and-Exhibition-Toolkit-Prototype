@@ -3253,7 +3253,7 @@ button:focus-visible,a:focus-visible,.vp:focus-visible{outline:2px solid var(--f
         x.putImageData(id, 0, 0); }
       return c; };
     // junction stars: fewer and brighter than the dust, mostly along the band
-    const build = () =&gt; { const r = vp.getBoundingClientRect(); W = r.width; H = vp.clientHeight; if (!W || !H) return; D = Math.hypot(W, H); small = W &lt; 640;
+    const build = () =&gt; { const r = vp.getBoundingClientRect(); W = r.width; H = vp.clientHeight; if (!W || !H) return; D = Math.hypot(W, H); small = W &lt; 640; if (build.w &amp;&amp; (build.w !== W || Math.abs(build.h - H) &gt; 150)) { fl = []; fs = []; fStart = 0; wEl = null; } build.w = W; build.h = H;
       const dpr = Math.min(2, devicePixelRatio || 1); cv.width = Math.ceil(W * dpr); cv.height = Math.ceil(H * dpr); cv.style.height = H + &#x27;px&#x27;; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); sv.width = cv.width; sv.height = cv.height; sv.style.height = H + &#x27;px&#x27;;
       if (G) { const gk = small ? .35 : .5; gc.width = Math.ceil(W * gk); gc.height = Math.ceil(H * gk); gc.style.height = H + &#x27;px&#x27;; gl.viewport(0, 0, gc.width, gc.height); }
       const s2e = ld.querySelector(&#x27;.s2&#x27;); s2y = s2e ? s2e.offsetTop || 1 : 1;
@@ -3765,7 +3765,7 @@ button:focus-visible,a:focus-visible,.vp:focus-visible{outline:2px solid var(--f
    is blank or unchanged does nothing. If the file is missing or can't be read (for example when the page is opened as a
    file or in a preview), the page simply keeps its built-in wording. */
 (function(){
-  var M = Object.create(null), OUT = Object.create(null), n = 0;
+  var M = Object.create(null), OUT = Object.create(null), ADD = Object.create(null), n = 0;
   try {
     if (/^https?:$/.test(location.protocol)) {
       var x = new XMLHttpRequest();
@@ -3775,12 +3775,14 @@ button:focus-visible,a:focus-visible,.vp:focus-visible{outline:2px solid var(--f
         if (/^\s*#/.test(line)) return;
         var i = line.indexOf('=>'); if (i < 0) return;
         var a = line.slice(0, i).trim(), b = line.slice(i + 2).trim();
+        // "+ question or page title => new item" adds an item instead of changing one
+        if (/^\+/.test(a)) { a = a.slice(1).trim(); if (a && b) { (ADD[a] = ADD[a] || []).push(b); n++; } return; }
         if (a && b && a !== b) { M[a] = b; OUT[b] = 1; n++; }
       });
     }
   } catch (e) { /* keep the built-in wording */ }
   window.__wn = n;
-  if (!n) { window.__w = function(s){ return s; }; window.__wDeep = function(o){ return o; }; return; }
+  if (!n) { window.__w = function(s){ return s; }; window.__wDeep = function(o){ return o; }; window.__wAdd = function(){ return []; }; return; }
   function one(s){
     if (typeof s !== 'string' || !s) return s;
     var t = s.trim();
@@ -3789,6 +3791,15 @@ button:focus-visible,a:focus-visible,.vp:focus-visible{outline:2px solid var(--f
     return s;
   }
   window.__w = one;
+  // new items listed for a question or page, found by its original or its changed wording
+  window.__wAdd = function(){
+    var out = [];
+    for (var i = 0; i < arguments.length; i++) {
+      var t = arguments[i]; if (typeof t !== 'string') continue; t = t.trim();
+      [t, one(t).trim()].forEach(function(k){ (ADD[k] || []).forEach(function(v){ if (out.indexOf(v) < 0) out.push(v); }); });
+    }
+    return out;
+  };
   // codes and ids are never wording
   var SKIP = {id:1,key:1,k:1,g:1,kind:1,fx:1,m:1,d:1,mode:1,c:1,kase:1,t:1,mail:1,url:1,href:1};
   window.__wDeep = function(o){
@@ -3874,7 +3885,7 @@ const DDISC={xr:{l:'XR'},film:{l:'Film',d:'film'},tv:{l:'TV/Radio',d:'film'},mul
 const DBT={dist:'Distribution',tech:'Technology services',net:'Network',edu:'Education',prod:'Production',consult:'Consulting',theatre:'Theater',museum:'Museum',library:'Library',gallery:'Art gallery',glam:'Archives and other',xr:'Dedicated XR space',dome:'Dome',online:'Online',festival:'Festival'};
 
 const DVT={xr:{l:'Dedicated XR space',t:v=>v.type==='xr'},cinema:{l:'Cinema'},museum:{l:'Museum',t:v=>v.type==='museum'},library:{l:'Library',t:v=>v.type==='library'},gallery:{l:'Art gallery',t:v=>v.type==='gallery'},dome:{l:'Dome',t:v=>v.type==='dome'},theater:{l:'Theater',t:v=>v.type==='theatre'},uni:{l:'University'},culture:{l:'Cultural center'},civic:{l:'Civic organization'},community:{l:'Community organization'}};
-/* v191 */ Object.assign(DFMT,{spatial:{l:'Spatial audio'},webxr:{l:'WebXR'}}); Object.assign(DVT,{news:{l:'News organization'},reused:{l:'Reused space'}}); Object.assign(DDISC,{journalism:{l:'Journalism'}}); if(window.__wn) window.__wDeep([DFMT,DVT,DDISC,PLAT]);
+/* v191 */ Object.assign(DFMT,{spatial:{l:'Spatial audio'},webxr:{l:'WebXR'}}); Object.assign(DVT,{news:{l:'News organization'},reused:{l:'Reused space'}}); Object.assign(DDISC,{journalism:{l:'Journalism'}}); if(window.__wn) window.__wDeep([DFMT,DVT,DDISC,PLAT]); if(window.__wn) [[DFMT,'What format would you like to explore?'],[DVT,'What venue type are you interested in?'],[DDISC,'What is the venue’s primary discipline?'],[PLAT,'What kind of platform or service are you looking for?','What platforms or service are you interested in?']].forEach(([o,...q])=>{ const have=new Set(Object.values(o).map(x=>x.l)); window.__wAdd(...q).forEach(v=>{ if(!have.has(v)){ have.add(v); o['add_'+v.toLowerCase().replace(/[^a-z0-9]+/g,'').slice(0,24)]={l:v}; } }); });
 /* v185: Database and Exhibition option lists in A-Z order */ [DFMT,DVT,DDISC,PLAT].forEach(o=>{ const e=Object.entries(o).sort((a,b)=>a[1].l.localeCompare(b[1].l,'en',{sensitivity:'base',numeric:true})); e.forEach(([k])=>delete o[k]); e.forEach(([k,v])=>o[k]=v); });
 const fchips=(v,fs)=>(v.f2||[]).map(k=>(DFMT[k]||{}).l||{games:'Games',other:'Other'}[k]).filter(Boolean).map(l=>`<span class="chip k-detail" style="font-size:${fs}">${esc(l)}</span>`).join(' ');
 const UNM=new Set([...Object.entries(DVT).filter(([,o])=>!o.t).map(([k])=>'type:'+k),...Object.entries(DFMT).filter(([,o])=>!o.m).map(([k])=>'fgroup:'+k),...Object.entries(PLAT).filter(([,o])=>!o.t).map(([k])=>'services:'+k),...Object.entries(DDISC).filter(([,o])=>!o.d).map(([k])=>'discipline:'+k)]);
@@ -4326,6 +4337,12 @@ if (jEl) {
       {id:'host',g:'host',short:'Checklist',text:'Checklist',kind:'checklist',items:HOSTCK,own:'Add something else to confirm',note:true}]}
   ];
   if(window.__wn) window.__wDeep([SEC,STAGES]); // v194: wording file (see wording-loader.js)
+  // v195: "+ question => new option" lines in wording.txt add options and checklist items (labels already present are skipped)
+  if(window.__wn) STAGES.forEach(st=>st.qs.forEach(q0=>[q0,q0.pair].filter(Boolean).forEach(q=>{
+    const tgt=q.kind==='checklist'?q.items:q.opts; if(!tgt||typeof tgt!=='object'||Array.isArray(tgt)) return;
+    const have=new Set(Object.values(tgt).map(String));
+    window.__wAdd(q.text).forEach(v=>{ if(have.has(v)) return; have.add(v); tgt['add_'+v.toLowerCase().replace(/[^a-z0-9]+/g,'').slice(0,24)]=v; });
+  })));
   // An example project, so every screen has something to look at. "Start blank" clears it.
   // A few questions are left unanswered on purpose (Readiness, Re-versioning, Festival timing, Geographical reach) to show skipping (Jacie 2026-11-03).
   const EXAMPLE={
@@ -4913,6 +4930,11 @@ if (jEl) {
       tools:()=>`<div class="res-in">${back}<h2 class="res-h">Tools</h2>
         <article class="res-item"><h3>Venue database</h3><p>Every venue, festival and support organisation in the toolkit, with filters.</p><button class="res-go" data-sk="app" data-go="database">Open the database →</button></article>
         <article class="res-item"><h3>Distribution plan</h3><p>Answer the guiding questions and download your plan as a PDF.</p><button class="res-go" data-sk="app" data-go="journey">Open your plan →</button></article></div>`};
+    // v195: "+ Catalogues => Title | https://link | short description" lines in wording.txt add links to a Resources page
+    if(window.__wn) RES.forEach(r=>{ const add=window.__wAdd(r.label); if(!add.length||!pages[r.k]) return; const f=pages[r.k];
+      const item=v=>{ const p=v.split('|').map(x=>x.trim()), url=p.find(x=>/^https?:\/\//.test(x))||'', rest=p.filter(x=>x!==url), host=url.replace(/^https?:\/\/(www\.)?/,'').replace(/\/.*$/,'');
+        return `<article class="res-item"><h3>${esc(rest[0]||host)}</h3>${rest[1]?`<p>${esc(rest.slice(1).join(' | '))}</p>`:''}${url?`<a class="res-ext" href="${esc(url)}" target="_blank" rel="noopener">Visit ${esc(host)} <span aria-hidden="true">↗</span></a>`:''}</article>`; };
+      pages[r.k]=()=>f().replace(/<\/div>\s*$/, add.map(item).join('')+'</div>'); });
     let resView='home';
     const drawRes=()=>{ resEl.innerHTML=resView==='home'
       ?`<div class="sketch live-sk" id="sk-res"><div class="sk-body sk-full"><div class="jc"><h2 class="jc-h">What would you like to explore?</h2>

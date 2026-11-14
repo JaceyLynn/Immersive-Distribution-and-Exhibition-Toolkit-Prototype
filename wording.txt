@@ -10,6 +10,17 @@
 #   3. Keep each entry on one line.
 #   4. To undo a change, make the text after "=>" the same as the text before it again.
 #
+# ADDING A NEW ITEM
+#   Start a new line with + then the question (or Resources page) it belongs to, then "=>", then the new item:
+#       + What venue type are you interested in? => Pop-up space
+#       + Checklist => Insurance certificates
+#       + Catalogues => Catalogue name | https://link-to-it.org | One-line description (optional)
+#   - Works for answer options in any question, checklist items, and links on the Catalogues and Directories pages.
+#   - Copy the question exactly as it appears in this file (the text before "=>" in its section).
+#   - New Database options show as "no data yet" until venues in the Airtable are tagged with them.
+#   - New questions and new filter types still need the development team.
+#   - You can add your new lines anywhere, for example at the very end of this file.
+#
 # GOOD TO KNOW
 #   - Lines that start with # are notes. The page ignores them.
 #   - If the same text appears in several places (for example an option used in two sections), one change updates it everywhere.
@@ -627,3 +638,6 @@ VR 6DoF plug and play projects are generally single-user room-scale but do not r
 Impulse: Playing with Reality, Anagram (IDFA DocLab 2024) => Impulse: Playing with Reality, Anagram (IDFA DocLab 2024)
 Soul Paint, Hatsumi (2024) => Soul Paint, Hatsumi (2024)
 Common Ground, Darren Emerson/East City Films (IDFA DocLab 2019) => Common Ground, Darren Emerson/East City Films (IDFA DocLab 2019)
+
+# ===== Your new items =====
+# Add new "+ ... => ..." lines below this one.
