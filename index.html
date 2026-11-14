@@ -2878,6 +2878,10 @@ body #sk-journey .pl-head-t .eyebrow{font-size:12px!important}
 
 /* v196: Start over sits beside "Copy link to save your progress" */
 .q-save .q-save-sep{margin:0 10px;color:var(--muted)}
+
+/* v197 (Jacie 2026-11-14): Resources start = Case studies, Catalogues, Directories in one row on wide screens, one column on small ones */
+#sk-res .jc-cards{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:56px 48px!important}
+@media (max-width:760px){#sk-res .jc-cards{grid-template-columns:minmax(0,1fr)!important;gap:44px!important}}
 </style>
 <a class="skip-link" href="#app-main">Skip to main content</a>
 <div class="app">
@@ -4928,7 +4932,7 @@ if (jEl) {
         <article class="res-item"><h3>Unframed Collection</h3><a class="res-ext" href="https://unframed-collection.com/en/experiences" target="_blank" rel="noopener">Visit unframed-collection.com <span aria-hidden="true">↗</span></a></article></div>`,
       dirs:()=>`<div class="res-in">${back}<h2 class="res-h">Directories</h2>
         <article class="res-item"><h3>Immersive Arts facilities directory</h3><p>Facilities for immersive work across the UK.</p><a class="res-ext" href="https://facilities.immersivearts.uk/" target="_blank" rel="noopener">Visit facilities.immersivearts.uk <span aria-hidden="true">↗</span></a></article>
-        <article class="res-item"><h3>Shared index (Google Sheet)</h3><p>A shared spreadsheet index from the research team.</p><a class="res-ext" href="https://docs.google.com/spreadsheets/d/1xAuh4Mo5vwO9K_SUn1WeZapxfFoMjuHYy0JsNXI2on0/edit?gid=1443296813#gid=1443296813" target="_blank" rel="noopener">Open the sheet <span aria-hidden="true">↗</span></a></article></div>`,
+        <article class="res-item"><h3>Radius - Immersive Exhibition Parameters Matrix</h3><p>A shared spreadsheet from the Radius team.</p><a class="res-ext" href="https://docs.google.com/spreadsheets/d/1xAuh4Mo5vwO9K_SUn1WeZapxfFoMjuHYy0JsNXI2on0/edit?gid=1443296813#gid=1443296813" target="_blank" rel="noopener">Open the sheet <span aria-hidden="true">↗</span></a></article></div>`,
       gloss:()=>`<div class="res-in gl-in"><h2 class="res-h">Glossary</h2>${window.GLOSS_HTML||''}</div>`,
       tools:()=>`<div class="res-in">${back}<h2 class="res-h">Tools</h2>
         <article class="res-item"><h3>Database</h3><p>Every venue, festival and support organisation in the toolkit, with filters.</p><button class="res-go" data-sk="app" data-go="database">Open the database →</button></article>
