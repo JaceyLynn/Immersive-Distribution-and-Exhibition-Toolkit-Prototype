@@ -2875,6 +2875,9 @@ body #sk-journey .pl-head-t .eyebrow{font-size:12px!important}
 
 /* v192: from 600px up the Database diagram draws to the width it has (no sideways scroll, nothing hidden under the side rail); phones keep the scrolling diagram */
 @media (min-width:600px){#sk-pathway .sk-body>div>svg,#sk-pathway .sk-body.live>div:first-child>svg,#sk-pathway .sk-body.live.fold>div>svg{min-width:0!important}}
+
+/* v196: Start over sits beside "Copy link to save your progress" */
+.q-save .q-save-sep{margin:0 10px;color:var(--muted)}
 </style>
 <a class="skip-link" href="#app-main">Skip to main content</a>
 <div class="app">
@@ -3628,7 +3631,7 @@ button:focus-visible,a:focus-visible,.vp:focus-visible{outline:2px solid var(--f
     <h1 id="home-h">There’s a world for immersive arts</h1>
     <div class="ways">
       <button class="btn-primary big" data-sk="app" data-go="journey" data-choose="1">Create Distribution Plan</button>
-      <button class="btn-primary big alt" data-sk="app" data-go="database">Explore Venue Database</button>
+      <button class="btn-primary big alt" data-sk="app" data-go="database">Explore Database</button>
     </div>
   </section>
 
@@ -3641,7 +3644,7 @@ button:focus-visible,a:focus-visible,.vp:focus-visible{outline:2px solid var(--f
   <div class="sf-in">
     <div class="sf-brand">
       <p class="sf-name">Immersive Distribution and Exhibition Toolkit</p>
-      <p class="sf-line">Guidance and a venue database for artists showing immersive work.</p>
+      <p class="sf-line">Guidance and a database for artists showing immersive work.</p>
       <button type="button" class="sf-pp" data-pp aria-haspopup="dialog">Privacy policy</button>
     </div>
     <nav class="sf-col" aria-label="Toolkit sections">
@@ -4084,7 +4087,7 @@ if (pwEl) {
     const next = last ? `<div class="pw-done">All filters added. Every venue on the right shows how it curates and how to reach out.</div>`
       : `<label class="pw-addf"><span>Add a filter</span><span class="pw-addf-s"><select id="pw-addf"><option value="" selected>Choose a filter</option>${['Primary','Secondary'].map(t=>{ const ls=addable.filter(l=>l.tier===t); return ls.length?`<optgroup label="${t}">${ls.map(l=>`<option value="${l.id}">${esc(l.label)}</option>`).join('')}</optgroup>`:''; }).join('')}</select></span></label>`;
     if(pw.intro){ pwEl.innerHTML=pwIntro(); pw.anim=null; pw.flash=null; return; }
-    pwEl.innerHTML = `<div class="sk-bar"><button type="button" class="pw-back" data-sk="pw-back"><span class="res-back-i" aria-hidden="true">←</span><span>Choose a different starting point</span></button><span class="pw-br" aria-hidden="true"></span>${L.map((l,i)=>`<span class="tab pw-tab ${i===pw.step?'on':''}" style="--tc:${NCOL[rowsOf(l)[0]]||'var(--ink)'};${i>pw.step?'opacity:.5':''}" title="${esc(PWTIP[l.id]||l.label)}"><span class="pw-tdot" aria-hidden="true"></span>${esc(l.label)}${nsel(l)?' · '+nsel(l):''}<button class="pw-x" data-sk="pw-del" data-i="${i}" aria-label="Remove the ${esc(l.label)} filter" title="Remove filter">×</button></span>`).join('')}<button class="tab pw-clr" data-sk="pw-clear">Clear all</button>${pwTopQ()}</div>
+    pwEl.innerHTML = `<div class="sk-bar"><button type="button" class="pw-back" data-sk="pw-back"><span class="res-back-i" aria-hidden="true">←</span><span>Choose a different starting point</span></button><span class="pw-br" aria-hidden="true"></span>${L.map((l,i)=>`<span class="tab pw-tab ${i===pw.step?'on':''}" style="--tc:${NCOL[rowsOf(l)[0]]||'var(--ink)'};${i>pw.step?'opacity:.5':''}" title="${esc(PWTIP[l.id]||l.label)}"><span class="pw-tdot" aria-hidden="true"></span>${esc(l.label)}${nsel(l)?' · '+nsel(l):''}<button class="pw-x" data-sk="pw-del" data-i="${i}" aria-label="Remove the ${esc(l.label)} filter" title="Remove filter">×</button></span>`).join('')}<button class="tab pw-clr" data-sk="pw-clear">Clear all</button><button class="tab pw-over" data-sk="start-over">Start over</button>${pwTopQ()}</div>
       ${pw.menu?`<div class="sk-menu">${Object.entries(ROUTES).map(([k,r])=>`<button class="${k===pw.route?'on':''}" data-sk="pw-route" data-route="${k}">“${r.q}”</button>`).join('')}</div>`:''}
       <div class="sk-body live${Object.values(pw.sel).some(x=>x&&x.length)&&matchMedia('(max-width:820px)').matches?' fold':''}${pw.lc&&!matchMedia('(max-width:820px)').matches?' lc':''}">
         <div style="background:var(--bg);padding:6px">${svg()}${next}<div class="pw-viewrow"><button class="pw-view${!suggest()&&rowsOf(R()[pw.step]).some(r=>(pw.sel[r]||[]).length)?' on':''}" data-sk="pw-view">View ${lfRes(res).length} matching ${catW(lfRes(res).length)} <span aria-hidden="true">→</span></button></div></div>
@@ -4546,7 +4549,7 @@ if (jEl) {
   function planPage(m){
     return `<div class="pl-page">
       <header class="pl-head"><div class="pl-head-t"><span class="eyebrow">${today()}</span><h2 class="pl-h pl-h-sm">Your distribution plan<span class="pl-eyes"> · For your eyes only</span></h2><label class="pl-tf" for="pl-title"><span class="pl-tf-l">Project title</span><span class="pl-tf-w"><input class="pl-tf-in" id="pl-title" value="${esc(j.title||'')}" placeholder="Add your project's name" autocomplete="off"><span class="pl-tf-car" aria-hidden="true"></span></span></label></div>
-        <div class="pl-acts"><span class="pl-btns"><button class="btn-primary" data-sk="j-dl">${j.saved?esc(j.saved):'↓ Download PDF'}</button><button class="pl-ghost" data-sk="j-copy">${j.copied?'Copied':'Copy as Markdown'}</button><a class="pl-ghost pl-mail" href="${esc(mailHref())}" target="_blank" rel="noopener">Send via email</a></span></div></header>
+        <div class="pl-acts"><span class="pl-btns"><button class="btn-primary" data-sk="j-dl">${j.saved?esc(j.saved):'↓ Download PDF'}</button><button class="pl-ghost" data-sk="j-copy">${j.copied?'Copied':'Copy as Markdown'}</button><a class="pl-ghost pl-mail" href="${esc(mailHref())}" target="_blank" rel="noopener">Send via email</a><button class="pl-ghost" data-sk="start-over">Start over</button></span></div></header>
       ${false?`<div class="pl-fold">${(()=>{ const fd=[...(m.parts.find(p=>p.key==='pl')||{subs:[]}).subs.map(sb=>'pl:'+sb.k),...m.parts.filter(p=>p.key!=='pl').map(p=>p.key+':all')], all=fd.length&&fd.every(k=>j.secOpen.has(k)); return `<button class="pl-fold-t" data-sk="j-fold" data-open="${all?0:1}" aria-label="${all?'Collapse':'Expand'} all sections"><span aria-hidden="true">${all?'−':'+'}</span> ${all?'Collapse':'Expand'} all</button>`; })()}</div>`:''}
       ${m.parts.length?m.parts.map(partHtml).join(''):`<div class="pl-emptyp"><p>Nothing saved yet. Answers and shortlisted places appear here as you go.</p><p>${startBtns([0,1,2])}</p></div>`}
       ${m.parts.length&&m.notStarted.length?`<p class="pl-notyet">Not started: ${startBtns(m.notStarted)}</p>`:''}
@@ -4716,7 +4719,7 @@ if (jEl) {
       const col=briefMode==='open'?`<aside class="jb" aria-label="Your brief"><b class="jb-t">Your brief</b>${briefBody()}</aside>`:'';
       // Your brief: a full-height tab on the right, matching the folded Questions tab (Jacie 2026-11-02). The matches tab is gone.
       const btab=briefMode!=='hidden'?`<button class="bt-rail pull-b" data-sk="j-brief" aria-expanded="${j.panel==='brief'}"><span class="rz-arr" aria-hidden="true">‹</span><span class="bt-lbl">Your brief</span></button>`:'';
-      body=`<div class="sk-body two qv${col?' three':''}${btab?' has-bt':''}">${left}${mid}${col}${btab}<p class="q-save"><button type="button" class="sf-save" data-sk="save-link">Copy link to save your progress</button></p></div>`;
+      body=`<div class="sk-body two qv${col?' three':''}${btab?' has-bt':''}">${left}${mid}${col}${btab}<p class="q-save"><button type="button" class="sf-save" data-sk="save-link">Copy link to save your progress</button><span class="q-save-sep" aria-hidden="true">·</span><button type="button" class="sf-save" data-sk="start-over">Start over</button></p></div>`;
     }
     if(j.panel==='match'&&!match) j.panel=null;
     if(j.panel==='brief'&&briefMode==='hidden') j.panel=null;
@@ -4928,7 +4931,7 @@ if (jEl) {
         <article class="res-item"><h3>Shared index (Google Sheet)</h3><p>A shared spreadsheet index from the research team.</p><a class="res-ext" href="https://docs.google.com/spreadsheets/d/1xAuh4Mo5vwO9K_SUn1WeZapxfFoMjuHYy0JsNXI2on0/edit?gid=1443296813#gid=1443296813" target="_blank" rel="noopener">Open the sheet <span aria-hidden="true">↗</span></a></article></div>`,
       gloss:()=>`<div class="res-in gl-in"><h2 class="res-h">Glossary</h2>${window.GLOSS_HTML||''}</div>`,
       tools:()=>`<div class="res-in">${back}<h2 class="res-h">Tools</h2>
-        <article class="res-item"><h3>Venue database</h3><p>Every venue, festival and support organisation in the toolkit, with filters.</p><button class="res-go" data-sk="app" data-go="database">Open the database →</button></article>
+        <article class="res-item"><h3>Database</h3><p>Every venue, festival and support organisation in the toolkit, with filters.</p><button class="res-go" data-sk="app" data-go="database">Open the database →</button></article>
         <article class="res-item"><h3>Distribution plan</h3><p>Answer the guiding questions and download your plan as a PDF.</p><button class="res-go" data-sk="app" data-go="journey">Open your plan →</button></article></div>`};
     // v195: "+ Catalogues => Title | https://link | short description" lines in wording.txt add links to a Resources page
     if(window.__wn) RES.forEach(r=>{ const add=window.__wAdd(r.label); if(!add.length||!pages[r.k]) return; const f=pages[r.k];
@@ -4982,6 +4985,10 @@ if (jEl) {
   window.addEventListener('message',e=>{ const to=e.data&&e.data.xrGo; if(to!=='journey'&&to!=='database') return; const btn=document.querySelector(`#v-home .ways [data-go="${to}"]`); if(btn) btn.click(); });
   // v163: footer contact links on every page, and a button that copies the link holding your progress
   document.querySelectorAll('#site-foot [data-mail]').forEach(a=>{ a.href=mailHref(a.dataset.mail); a.target='_blank'; a.rel='noopener'; });
+  // v196 (Sarah via Jacie 2026-11-14, user testing): answers live in the page address, so a reload or a reopened tab brings them back.
+  // "Start over" clears everything (Planning answers, Database filters and shortlist) by reopening the page with a clean address.
+  handlers['start-over']=()=>{ if(!confirm('Start over? This clears all your answers, Database filters and shortlist.')) return;
+    try{ history.replaceState(null,'',location.pathname+location.search+'#'+(document.body.dataset.view||'home')); }catch(e){} location.reload(); };
   handlers['save-link']=t=>{ try{ history.replaceState(history.state,'','#'+(document.body.dataset.view||'home')+bridge.code()); }catch(e){}
     const done=ok=>{ t.textContent=ok?'Link copied. Bookmark or keep it to come back to your progress':'Copy the address in your browser bar to save your progress'; clearTimeout(t._r); t._r=setTimeout(()=>{ t.textContent='Copy link to save your progress'; },5000); };
     try{ navigator.clipboard.writeText(location.href).then(()=>done(true),()=>done(false)); }catch(e){ done(false); } };

@@ -33,7 +33,7 @@
 # ===== Landing page =====
 There’s a world for immersive arts => There’s a world for immersive arts
 Create Distribution Plan => Create Distribution Plan
-Explore Venue Database => Explore Venue Database
+Explore Database => Explore Database
 
 # ===== Planning: start page =====
 Where would you like to start? => Where would you like to start?
@@ -484,7 +484,7 @@ Map => Map
 
 # ===== Footer =====
 Immersive Distribution and Exhibition Toolkit => Immersive Distribution and Exhibition Toolkit
-Guidance and a venue database for artists showing immersive work. => Guidance and a venue database for artists showing immersive work.
+Guidance and a database for artists showing immersive work. => Guidance and a database for artists showing immersive work.
 Explore => Explore
 Get in touch => Get in touch
 Add a resource => Add a resource
